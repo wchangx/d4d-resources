@@ -1,54 +1,60 @@
+@charset "UTF-8";
 body {
   background: #fafafa;
   color: #333;
-  font-family: "Droid Sans", "helvetica neue", sans-serif;
+  font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
   margin: 50px;
   padding: 0; }
 
 a {
-  color: #d30;
+  color: #AD141E;
   padding-bottom: 2px;
   position: relative;
   text-decoration: none; }
+  a:hover {
+    border-bottom: 1px solid #d30; }
+  a:after {
+    color: #bbb;
+    font-size: 12px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 4px;
+    bottom: 0px; }
+  a.site:after {
+    content: "site"; }
+  a.video:after {
+    content: "video"; }
+  a.article:after {
+    content: "article"; }
+  a.book:after {
+    content: "book"; }
+  a.app:after {
+    content: "app"; }
+  a.code:after {
+    content: "code"; }
 
-a:hover {
-  border-bottom: 1px solid #d30; }
-
-a.site:after {
-  color: #bbb;
-  content: "site";
-  font-size: 12px;
-  margin: 0 0 0 4px; }
-
-a.book:after {
-  color: #bbb;
-  content: "book";
-  font-size: 12px;
-  margin: 0 0 0 4px; }
-
-a.app:after {
-  color: #bbb;
-  content: "app";
-  font-size: 12px;
-  margin: 0 0 0 4px; }
-
-a.code:after {
-  color: #bbb;
-  content: "code";
-  font-size: 12px;
-  margin: 0 0 0 4px; }
+header {
+  margin: 0 0 100px 0; }
+  header h2 {
+    font-size: 56px;
+    font-weight: 100;
+    margin: 0 0 10px 0; }
 
 h1 {
-  font-size: 28px;
-  font-weight: normal;
-  margin: 0 0 100px 0; }
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 .column {
   float: left;
-  width: 450px; }
+  width: 600px;
+  margin-right: 30px; }
 
 h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0 0 10px 0; }
 
@@ -56,8 +62,16 @@ ul {
   list-style: none;
   margin: 0 0 42px 0;
   padding: 0; }
-
-ul li {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0 0 10px 0; }
+  ul li {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0 0 10px 0;
+    position: relative; }
+    ul li.star:before {
+      content: "★";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: -1.5em;
+      font-size: 10px;
+      color: #aaa; }
