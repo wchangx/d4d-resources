@@ -1,0 +1,63 @@
+body {
+  background: #fafafa;
+  color: #333;
+  font-family: "Droid Sans", "helvetica neue", sans-serif;
+  margin: 50px;
+  padding: 0; }
+
+a {
+  color: #d30;
+  padding-bottom: 2px;
+  position: relative;
+  text-decoration: none; }
+
+a:hover {
+  border-bottom: 1px solid #d30; }
+
+a.site:after {
+  color: #bbb;
+  content: "site";
+  font-size: 12px;
+  margin: 0 0 0 4px; }
+
+a.book:after {
+  color: #bbb;
+  content: "book";
+  font-size: 12px;
+  margin: 0 0 0 4px; }
+
+a.app:after {
+  color: #bbb;
+  content: "app";
+  font-size: 12px;
+  margin: 0 0 0 4px; }
+
+a.code:after {
+  color: #bbb;
+  content: "code";
+  font-size: 12px;
+  margin: 0 0 0 4px; }
+
+h1 {
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0 0 100px 0; }
+
+.column {
+  float: left;
+  width: 450px; }
+
+h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 10px 0; }
+
+ul {
+  list-style: none;
+  margin: 0 0 42px 0;
+  padding: 0; }
+
+ul li {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 10px 0; }
