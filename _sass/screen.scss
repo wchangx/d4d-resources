@@ -1,4 +1,6 @@
 @import "bourbon/bourbon";
+@import "neat/neat";
+@import "principles";
 
 body {
   background: #fafafa;
@@ -6,6 +8,10 @@ body {
   font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
   margin: 50px;
   padding: 0;
+}
+
+section.container {
+  @include outer-container;
 }
 
 a {
@@ -71,9 +77,7 @@ h1 {
 }
 
 .column {
-  float: left;
-  width: 600px;
-  margin-right: 30px;
+  @include span-columns(6);
 }
 
 h2 {
