@@ -11,6 +11,10 @@ body.grid {
     ul {
       @include span-columns(4 of 8);
     }
+
+    h3 {
+      margin-bottom: 0;
+    }
   }
 
   ul.column-types {
