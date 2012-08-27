@@ -51,7 +51,8 @@ body.grid section.anatomy {
   display: block;
   float: left;
   margin-right: 2.358%;
-  width: 65.881%; }
+  width: 65.881%;
+  margin-bottom: 40px; }
   body.grid section.anatomy:before, body.grid section.anatomy:after {
     content: "";
     display: table; }
@@ -74,6 +75,10 @@ body.grid section.anatomy {
     width: 48.211%; }
     body.grid section.anatomy ul:last-child {
       margin-right: 0; }
+  body.grid section.anatomy h3 {
+    margin-bottom: 0; }
+  body.grid section.anatomy p {
+    margin-top: 6px; }
 body.grid ul.column-types {
   zoom: 1;
   display: block; }

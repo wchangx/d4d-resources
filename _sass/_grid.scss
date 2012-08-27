@@ -1,7 +1,8 @@
 body.grid {
-  section.anatomy{
+  section.anatomy {
     @include row();
     @include span-columns(8);
+    margin-bottom: 40px;
 
     img {
       @include span-columns(4 of 8);
@@ -14,6 +15,10 @@ body.grid {
 
     h3 {
       margin-bottom: 0;
+    }
+
+    p {
+      margin-top: 6px;
     }
   }
 
