@@ -26,22 +26,71 @@ body.principles ul li {
     margin-right: 0; }
   body.principles ul li:nth-child(4n+1) {
     clear: both; }
-  body.principles ul li img {
+  body.principles ul li header img {
     border: 1px solid #000;
     max-width: 100%;
     display: block;
     float: left;
-    margin-right: 2.358%;
-    width: 23.232%; }
-    body.principles ul li img:last-child {
+    margin-right: 10.148%;
+    width: 26.568%; }
+    body.principles ul li header img:last-child {
       margin-right: 0; }
-  body.principles ul li section {
+  body.principles ul li header h3 {
+    display: block;
+    float: left;
+    margin-right: 10.148%;
+    width: 63.284%;
+    font-size: 32px;
+    margin-top: 24px; }
+    body.principles ul li header h3:last-child {
+      margin-right: 0; }
+
+body.grid section.anatomy {
+  zoom: 1;
+  display: block;
+  display: block;
+  float: left;
+  margin-right: 2.358%;
+  width: 65.881%; }
+  body.grid section.anatomy:before, body.grid section.anatomy:after {
+    content: "";
+    display: table; }
+  body.grid section.anatomy:after {
+    clear: both; }
+  body.grid section.anatomy:last-child {
+    margin-right: 0; }
+  body.grid section.anatomy img {
+    display: block;
+    float: left;
+    margin-right: 3.579%;
+    width: 48.211%;
+    max-width: 100%; }
+    body.grid section.anatomy img:last-child {
+      margin-right: 0; }
+  body.grid section.anatomy ul {
+    display: block;
+    float: left;
+    margin-right: 3.579%;
+    width: 48.211%; }
+    body.grid section.anatomy ul:last-child {
+      margin-right: 0; }
+body.grid ul.column-types {
+  zoom: 1;
+  display: block; }
+  body.grid ul.column-types:before, body.grid ul.column-types:after {
+    content: "";
+    display: table; }
+  body.grid ul.column-types:after {
+    clear: both; }
+  body.grid ul.column-types li {
     display: block;
     float: left;
     margin-right: 2.358%;
-    width: 74.411%; }
-    body.principles ul li section:last-child {
+    width: 31.762%; }
+    body.grid ul.column-types li:last-child {
       margin-right: 0; }
+    body.grid ul.column-types li img {
+      max-width: 100%; }
 
 body {
   background: #fafafa;

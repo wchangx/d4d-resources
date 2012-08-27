@@ -1,0 +1,27 @@
+body.grid {
+  section.anatomy{
+    @include row();
+    @include span-columns(8);
+
+    img {
+      @include span-columns(4 of 8);
+        max-width: 100%;
+    }
+
+    ul {
+      @include span-columns(4 of 8);
+    }
+  }
+
+  ul.column-types {
+    @include row();
+
+    li {
+      @include span-columns(4);
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

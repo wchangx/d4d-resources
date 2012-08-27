@@ -9,14 +9,18 @@ body.principles {
         clear: both;
       }
 
-      img {
-        border: 1px solid #000;
-        max-width: 100%;
-        @include span-columns(3);
-      }
+      header {
+        img {
+          border: 1px solid #000;
+          max-width: 100%;
+          @include span-columns(1 of 3);
+        }
 
-      section {
-        @include span-columns(9);
+        h3 {
+          @include span-columns(2 of 3);
+          font-size: 32px;
+          margin-top: 24px;
+        }
       }
     }
   }
