@@ -133,6 +133,16 @@ ul {
 aside {
   margin-left: flex-gutter();
   @include span-columns(2);
+
+	h2 {
+    border-top:3px solid #f3f3f3;
+    padding-top: lh(.5);
+    margin-top: lh(2);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 	
 	li.trail-map {
 		border: 1px solid #ccc;
@@ -152,8 +162,31 @@ aside {
 			
 			&:hover {
 				color: white;
-			};
+			}
 		}
-		
+	
+	li {
+		margin-bottom: 0;
+	}
+	
+	}
+}
+
+#sign-up {
+	margin: lh(1) 0 lh(3) 0;
+	background-color: $red;
+	@include button(simple, $red);
+	width: 100%;
+	
+	a {
+		display: block;
+		padding: .5em 0;
+	}
+	
+	h3 {
+		text-align: center;
+		color: white;
+		font-size: em(42, 18);
+		font-weight: 600;
 	}
 }

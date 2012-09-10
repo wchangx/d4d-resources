@@ -443,6 +443,12 @@ aside {
   width: 14.70196%; }
   aside:last-child {
     margin-right: 0; }
+  aside h2 {
+    border-top: 3px solid #f3f3f3;
+    padding-top: 0.809em;
+    margin-top: 3.236em; }
+    aside h2:first-child {
+      margin-top: 0; }
   aside li.trail-map {
     border: 1px solid #ccc;
     padding: 0; }
@@ -461,6 +467,59 @@ aside {
       padding: .5em; }
       aside li.trail-map a:hover {
         color: white; }
+    aside li.trail-map li {
+      margin-bottom: 0; }
+
+#sign-up {
+  margin: 1.618em 0 4.854em 0;
+  background-color: #ad141e;
+  border: 1px solid #72070e;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 0 0 #dc313c;
+  box-shadow: inset 0 1px 0 0 #dc313c;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #ad141e;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ad141e), color-stop(100%, #810810));
+  background-image: -webkit-linear-gradient(top, #ad141e, #810810);
+  background-image: -moz-linear-gradient(top, #ad141e, #810810);
+  background-image: -ms-linear-gradient(top, #ad141e, #810810);
+  background-image: -o-linear-gradient(top, #ad141e, #810810);
+  background-image: linear-gradient(top, #ad141e, #810810);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #620309;
+  -webkit-background-clip: padding-box;
+  width: 100%; }
+  #sign-up:hover:not(:disabled) {
+    -webkit-box-shadow: inset 0 1px 0 0 #bc1e29;
+    box-shadow: inset 0 1px 0 0 #bc1e29;
+    cursor: pointer;
+    background-color: #93151d;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #93151d), color-stop(100%, #72080f));
+    background-image: -webkit-linear-gradient(top, #93151d, #72080f);
+    background-image: -moz-linear-gradient(top, #93151d, #72080f);
+    background-image: -ms-linear-gradient(top, #93151d, #72080f);
+    background-image: -o-linear-gradient(top, #93151d, #72080f);
+    background-image: linear-gradient(top, #93151d, #72080f); }
+  #sign-up:active:not(:disabled) {
+    border: 1px solid #72070e;
+    -webkit-box-shadow: inset 0 0 8px 4px #63070d, inset 0 0 8px 4px #63070d, 0 1px 1px 0 #eeeeee;
+    box-shadow: inset 0 0 8px 4px #63070d, inset 0 0 8px 4px #63070d, 0 1px 1px 0 #eeeeee; }
+  #sign-up:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+  #sign-up a {
+    display: block;
+    padding: .5em 0; }
+  #sign-up h3 {
+    text-align: center;
+    color: white;
+    font-size: 2.33333em;
+    font-weight: 600; }
 
 body.principles ul li {
   zoom: 1;
