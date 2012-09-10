@@ -34,28 +34,6 @@ header {
   }
 }
 
-aside {
-  margin-left: flex-gutter();
-  @include span-columns(2);
-
-  li {
-    &.trail-map {
-      border: 1px solid #ccc;
-      padding: 1em;
-      
-      a {
-        color: $red;
-
-        &:hover {
-          text-decoration: underline
-        }
-      }
-
-    }
-
-  }
-}
-
 
 a {
   padding-bottom: em(20, 18);
@@ -150,4 +128,32 @@ ul {
       margin-top: 0;
     }
   }
+}
+
+aside {
+  margin-left: flex-gutter();
+  @include span-columns(2);
+	
+	li.trail-map {
+		border: 1px solid #ccc;
+		padding: 0;
+		
+		&:hover {
+			background-color: $red;
+			@include transition;
+			border: 1px solid white;
+		};
+		
+		a {
+			color: $red;
+			display:block;
+			width: 100%;
+			padding: .5em;
+			
+			&:hover {
+				color: white;
+			};
+		}
+		
+	}
 }
