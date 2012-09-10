@@ -443,6 +443,11 @@ aside {
   width: 14.70196%; }
   aside:last-child {
     margin-right: 0; }
+  aside li {
+    margin-bottom: 0; }
+  aside a {
+    margin-bottom: 0;
+    color: #ccc; }
   aside h2 {
     border-top: 3px solid #f3f3f3;
     padding-top: 0.809em;
@@ -467,8 +472,6 @@ aside {
       padding: .5em; }
       aside li.trail-map a:hover {
         color: white; }
-    aside li.trail-map li {
-      margin-bottom: 0; }
 
 #sign-up {
   margin: 1.618em 0 4.854em 0;
@@ -521,6 +524,23 @@ aside {
     font-size: 2.33333em;
     font-weight: 600; }
 
+/*---------RWD---------*/
+@media screen and (max-width: 960px) {
+  .content-container {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    .content-container:last-child {
+      margin-right: 0; }
+
+  .column {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .column:last-child {
+      margin-right: 0; } }
 body.principles ul li {
   zoom: 1;
   display: block;

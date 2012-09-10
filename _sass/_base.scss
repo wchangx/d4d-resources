@@ -134,6 +134,15 @@ aside {
   margin-left: flex-gutter();
   @include span-columns(2);
 
+	li {
+		margin-bottom: 0;
+	}
+	
+	a {
+		margin-bottom: 0;
+		color: #ccc;
+	}
+
 	h2 {
     border-top:3px solid #f3f3f3;
     padding-top: lh(.5);
@@ -152,7 +161,7 @@ aside {
 			background-color: $red;
 			@include transition;
 			border: 1px solid white;
-		};
+		}
 		
 		a {
 			color: $red;
@@ -164,11 +173,7 @@ aside {
 				color: white;
 			}
 		}
-	
-	li {
-		margin-bottom: 0;
-	}
-	
+
 	}
 }
 
@@ -189,4 +194,19 @@ aside {
 		font-size: em(42, 18);
 		font-weight: 600;
 	}
+}
+
+
+/*---------RWD---------*/
+
+@media screen and (max-width: 960px) {
+
+
+	.content-container {
+		@include span-columns(10);
+	}
+	.column {
+		@include span-columns(12);
+	}
+
 }

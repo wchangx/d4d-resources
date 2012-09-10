@@ -4,3 +4,5 @@ $lh: golden-ratio(1em, 1);
 @function lh($amount: 1) {
   @return $lh * $amount;
 }
+
+$break1: 481px;
