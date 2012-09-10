@@ -1,0 +1,6 @@
+$red: #ad141e;
+$lh: golden-ratio(1em, 1);
+
+@function lh($amount: 1) {
+  @return $lh * $amount;
+}

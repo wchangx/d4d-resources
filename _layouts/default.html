@@ -12,7 +12,31 @@
 
   <body class="{{ page.keyword }}">
     <section class="container">
-      {{ content }}
+      <header>
+        <hgroup>
+          <h1>Design for Developers</h1>
+          <h2>Resources &amp; Reading List</h2>
+        </hgroup>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <aside>
+        <ul>
+          <li class="trail-map"><a href="#">thoughtbot<br/>trail-maps</a></li>
+          <li>
+            <h3>Workshop Cheatsheets</h3>
+            <ul>
+              <li><a href="/d4d-resources/principles.html">Principles</a></li>
+              <li><a href="#">Grid</a></li>
+              <li><a href="#">Typography</a></li>
+              <li><a href="#">Color</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
     </section>
   </body>
 </html>

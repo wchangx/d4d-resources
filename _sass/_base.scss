@@ -1,0 +1,153 @@
+body {
+  background: #fff;
+  color: #333;
+  font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
+  line-height: $lh;
+  margin: 0 lh(3);
+  font-size: em(18);
+  padding: 0;
+}
+
+section.container {
+  @include outer-container;
+}
+
+header {
+  margin: lh(4) 0 lh(4.5) 0;
+  text-align: center;
+
+  h1 {
+    font-size: em(48, 18);
+    font-weight: 100;
+    color: black;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: em(72, 18);
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    color: $red;
+    line-height: 1em;
+    margin: 0;
+  }
+}
+
+aside {
+  margin-left: flex-gutter();
+  @include span-columns(2);
+
+  li {
+    &.trail-map {
+      border: 1px solid #ccc;
+      padding: 1em;
+      
+      a {
+        color: $red;
+
+        &:hover {
+          text-decoration: underline
+        }
+      }
+
+    }
+
+  }
+}
+
+
+a {
+  padding-bottom: em(20, 18);
+  position: relative;
+  text-decoration: none;
+  color: #5d5d5d;
+  @include transition;
+
+  &:hover {
+    color: $red;
+  }
+
+  &:after {
+    color: #bbb;
+    font-size: em(12, 18);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include position(absolute,  0 0 0px 0px);
+  }
+
+  &.site:after {
+    content: "site";
+  }
+
+  &.video:after {
+    content: "video";
+  }
+
+  &.article:after {
+    content: "article";
+  }
+
+  &.book:after {
+    content: "book";
+  }
+
+  &.app:after {
+    content: "app";
+  }
+
+  &.code:after {
+    content: "code";
+  }
+}
+
+h2 {
+  font-size: em(18, 18);
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 42px 0;
+  padding: 0;
+
+  li {
+    font-weight: normal;
+    margin: 0 0 1em 0;
+    position: relative;
+
+    &.star {
+      a {
+        &:before {
+          content: "★";
+          display: block;
+          @include position(absolute,  0 0 0 -1.8em);
+          font-size: em(9, 18);
+          color: #ccc;
+          @include transition;
+        }
+
+        &:hover:before {
+          color: $red;
+        }
+      }
+    }
+  }
+
+}
+
+
+.column {
+  @include span-columns(5);
+
+  h2 {
+    border-top:3px solid #f3f3f3;
+    padding-top: lh(.5);
+    margin-top: lh(2);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
