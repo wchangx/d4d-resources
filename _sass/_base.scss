@@ -210,3 +210,18 @@ aside {
 	}
 
 }
+
+@media screen and (max-width: 838px) {
+
+	.content-container {
+		@include span-columns(9);
+	}
+	.column {
+		@include span-columns(12);
+	}
+	
+	aside {
+		@include span-columns(3);
+	}
+
+}

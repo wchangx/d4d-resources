@@ -541,6 +541,30 @@ aside {
     width: 100%; }
     .column:last-child {
       margin-right: 0; } }
+@media screen and (max-width: 838px) {
+  .content-container {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    .content-container:last-child {
+      margin-right: 0; }
+
+  .column {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .column:last-child {
+      margin-right: 0; }
+
+  aside {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    aside:last-child {
+      margin-right: 0; } }
 body.principles ul li {
   zoom: 1;
   display: block;
