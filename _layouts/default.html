@@ -10,20 +10,25 @@
     <link rel="stylesheet" href="stylesheets/screen.css" />
   </head>
 
+	<header>
+	  <hgroup>
+			<a href="/">
+		    <h1>Design for Developers</h1>
+		    <h2>Resources &amp; Reading List</h2>
+			</a>
+	  </hgroup>
+	</header>
+
+
   <body class="{{ page.keyword }}">
     <section class="container">
-      <header>
-        <hgroup>
-          <h1>Design for Developers</h1>
-          <h2>Resources &amp; Reading List</h2>
-        </hgroup>
-      </header>
+
 
       <section>
         {{ content }}
       </section>
 
-      <aside>
+      <aside class="omega">
         <ul>
 					<li class="trail-map"><a href="#">thoughtbot<br/>trail-maps</a></li>
           <li>
@@ -37,12 +42,13 @@
           </li>
         </ul>
       </aside>
+
     </section>
 
 		<div id="sign-up">
 			<a href="#"><h3>Sign up for the next Design for Developers</h3>
 		</div>
-				
+
 
 
   </body>

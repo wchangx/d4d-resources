@@ -3,17 +3,32 @@ body {
   color: #333;
   font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
   line-height: $lh;
-  margin: 0 lh(3);
   font-size: em(18);
-  padding: 0;
+  padding: 0 lh(3);
+	border-top: 5px solid $red;
 }
 
 section.container {
   @include outer-container;
+	background: url("/images/shadowing.png") center top no-repeat;
+	border-top: 1px solid #eee;
+	padding-top: lh();
+	
+	h1 {
+		font-size: em(48, 18);
+		font-weight: 600;
+		margin-bottom: lh();
+	}	
+}
+
+body.home section.container {
+	background: none;
+	border-top: none;
+	padding-top: 0;
 }
 
 header {
-  margin: lh(4) 0 lh(4.5) 0;
+  margin: lh(3) 0 lh(2.5) 0;
   text-align: center;
 
   h1 {
@@ -32,8 +47,9 @@ header {
     line-height: 1em;
     margin: 0;
   }
-}
 
+
+}
 
 a {
   padding-bottom: em(20, 18);
@@ -100,8 +116,8 @@ ul {
         &:before {
           content: "★";
           display: block;
-          @include position(absolute,  0 0 0 -1.8em);
-          font-size: em(9, 18);
+          @include position(absolute,  -.25em 0 0 -1em);
+          font-size: em(18, 18);
           color: #ccc;
           @include transition;
         }
@@ -169,15 +185,24 @@ aside {
 				color: white;
 			}
 		}
-
 	}
 }
 
+.content-container {
+	background: url("../images/shadowing.png") center top no-repeat;
+}
+
+header a:hover {
+	h1 {color: $red; @include transition;}
+	h2 {color: black; @include transition;}
+}
+
 #sign-up {
+	width: 100%;
 	margin: lh(4) 0 lh(5) 0;
 	background-color: $red;
 	@include button(simple, $red);
-	width: 100%;
+	
 	
 	a {
 		display: block;
