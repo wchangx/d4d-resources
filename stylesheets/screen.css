@@ -350,11 +350,6 @@ section.container {
     font-weight: 600;
     margin-bottom: 1.618em; }
 
-body.home section.container {
-  background: none;
-  border-top: none;
-  padding-top: 0; }
-
 header {
   margin: 4.854em 0 4.045em 0;
   text-align: center; }
@@ -597,7 +592,12 @@ header a:hover h2 {
 @media screen and (max-width: 640px) {
   body {
     font-size: 0.875em;
-    margin: 0 3.236em; } }
+    padding: 0 3.236em; } }
+body.home section.container {
+  background: none;
+  border-top: none;
+  padding-top: 0; }
+
 body.principles #principles-wrapper ul {
   display: block;
   float: left;

@@ -21,11 +21,6 @@ section.container {
 	}	
 }
 
-body.home section.container {
-	background: none;
-	border-top: none;
-	padding-top: 0;
-}
 
 header {
   margin: lh(3) 0 lh(2.5) 0;
@@ -250,7 +245,7 @@ header a:hover {
 @media screen and (max-width: 640px) {
 	body 	{
 		font-size: em(14);
-		margin: 0 lh(2);
+		padding: 0 lh(2);
 	}
 }
 
@@ -258,3 +253,9 @@ header a:hover {
 	
 }
 
+
+body.home section.container {
+	background: none;
+	border-top: none;
+	padding-top: 0;
+}
