@@ -1,36 +1,40 @@
 body.grid {
-  section.anatomy {
-    @include row();
-    @include span-columns(8);
-    margin-bottom: 40px;
+	#grid-wrapper {
+		@include span-columns(10);
 
-    img {
-      @include span-columns(4 of 8);
-        max-width: 100%;
-    }
+	  section.anatomy {
+	    @include row();
+	    @include span-columns(8);
+	    margin-bottom: 40px;
 
-    ul {
-      @include span-columns(4 of 8);
-    }
+	    img {
+	      @include span-columns(4 of 8);
+	        max-width: 100%;
+	    }
 
-    h3 {
-      margin-bottom: 0;
-    }
+	    ul {
+	      @include span-columns(4 of 8);
+	    }
 
-    p {
-      margin-top: 6px;
-    }
-  }
+	    h3 {
+	      margin-bottom: 0;
+	    }
 
-  ul.column-types {
-    @include row();
+	    p {
+	      margin-top: 6px;
+	    }
+	  }
 
-    li {
-      @include span-columns(4);
+	  ul.column-types {
+	    @include row();
 
-      img {
-        max-width: 100%;
-      }
-    }
-  }
+	    li {
+	      @include span-columns(4);
+
+	      img {
+	        max-width: 100%;
+	      }
+	    }
+	  }
+	}
 }

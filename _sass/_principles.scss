@@ -1,27 +1,36 @@
 body.principles {
-  ul {
-    li {
-      @include row;
-      @include span-columns(3);
-      @include nth-omega(4n);
+	
+	#principles-wrapper {
 
-      &:nth-child(4n+1) {
-        clear: both;
-      }
+	  ul {
+		
+			@include span-columns(10);
+		
+	    li {
+	      @include row;
+	      @include span-columns(1 of 4);
+	      @include nth-omega(4n);
+				margin-top: 0;
 
-      header {
-        img {
-          border: 1px solid #000;
-          max-width: 100%;
-          @include span-columns(1 of 3);
-        }
 
-        h3 {
-          @include span-columns(2 of 3);
-          font-size: 32px;
-          margin-top: 24px;
-        }
-      }
-    }
-  }
+	      header {
+	
+					margin: 0 0 1em 0;
+      
+	  			img {
+	          border: 1px solid #000;
+	          max-width: 100%;
+	          @include span-columns(1 of 3);
+						}
+
+	        h3 {
+	          @include span-columns(2 of 3);
+	          font-size: em(20, 18);
+	        }
+
+	      }
+	    }
+	  }
+	}
 }
+

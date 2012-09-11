@@ -355,7 +355,7 @@ header {
   header h2 {
     font-size: 4em;
     font-weight: 800;
-    margin: 0 0 10px 0;
+    margin: 0 0 1.2135em 0;
     color: #ad141e;
     line-height: 1em;
     margin: 0; }
@@ -400,7 +400,7 @@ h2 {
 
 ul {
   list-style: none;
-  margin: 0 0 42px 0;
+  margin: 0 0 0.13889em 0;
   padding: 0; }
   ul li {
     font-weight: normal;
@@ -452,8 +452,6 @@ aside {
     border-top: 3px solid #f3f3f3;
     padding-top: 0.809em;
     margin-top: 3.236em; }
-    aside h2:first-child {
-      margin-top: 0; }
   aside li.trail-map {
     border: 1px solid #ccc;
     padding: 0; }
@@ -474,7 +472,7 @@ aside {
         color: white; }
 
 #sign-up {
-  margin: 1.618em 0 4.854em 0;
+  margin: 6.472em 0 8.09em 0;
   background-color: #ad141e;
   border: 1px solid #72070e;
   -webkit-border-radius: 3px;
@@ -565,91 +563,109 @@ aside {
     width: 23.23176%; }
     aside:last-child {
       margin-right: 0; } }
-body.principles ul li {
-  zoom: 1;
-  display: block;
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 0.875em;
+    margin: 0 3.236em; } }
+body.principles #principles-wrapper ul {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 23.23176%; }
-  body.principles ul li:before, body.principles ul li:after {
-    content: "";
-    display: table; }
-  body.principles ul li:after {
-    clear: both; }
-  body.principles ul li:last-child {
+  width: 82.94039%; }
+  body.principles #principles-wrapper ul:last-child {
     margin-right: 0; }
-  body.principles ul li:nth-child(4n) {
-    margin-right: 0; }
-  body.principles ul li:nth-child(4n+1) {
-    clear: both; }
-  body.principles ul li header img {
-    border: 1px solid #000;
-    max-width: 100%;
+  body.principles #principles-wrapper ul li {
+    zoom: 1;
+    display: block;
     display: block;
     float: left;
-    margin-right: 10.1484%;
-    width: 26.56773%; }
-    body.principles ul li header img:last-child {
+    margin-right: 7.42297%;
+    width: 19.43277%;
+    margin-top: 0; }
+    body.principles #principles-wrapper ul li:before, body.principles #principles-wrapper ul li:after {
+      content: "";
+      display: table; }
+    body.principles #principles-wrapper ul li:after {
+      clear: both; }
+    body.principles #principles-wrapper ul li:last-child {
       margin-right: 0; }
-  body.principles ul li header h3 {
-    display: block;
-    float: left;
-    margin-right: 10.1484%;
-    width: 63.28387%;
-    font-size: 32px;
-    margin-top: 24px; }
-    body.principles ul li header h3:last-child {
+    body.principles #principles-wrapper ul li:nth-child(4n) {
       margin-right: 0; }
+    body.principles #principles-wrapper ul li header {
+      margin: 0 0 1em 0; }
+      body.principles #principles-wrapper ul li header img {
+        border: 1px solid #000;
+        max-width: 100%;
+        display: block;
+        float: left;
+        margin-right: 10.1484%;
+        width: 26.56773%; }
+        body.principles #principles-wrapper ul li header img:last-child {
+          margin-right: 0; }
+      body.principles #principles-wrapper ul li header h3 {
+        display: block;
+        float: left;
+        margin-right: 10.1484%;
+        width: 63.28387%;
+        font-size: 1.11111em; }
+        body.principles #principles-wrapper ul li header h3:last-child {
+          margin-right: 0; }
 
-body.grid section.anatomy {
-  zoom: 1;
-  display: block;
+body.grid #grid-wrapper {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-bottom: 40px; }
-  body.grid section.anatomy:before, body.grid section.anatomy:after {
-    content: "";
-    display: table; }
-  body.grid section.anatomy:after {
-    clear: both; }
-  body.grid section.anatomy:last-child {
+  width: 82.94039%; }
+  body.grid #grid-wrapper:last-child {
     margin-right: 0; }
-  body.grid section.anatomy img {
+  body.grid #grid-wrapper section.anatomy {
+    zoom: 1;
     display: block;
-    float: left;
-    margin-right: 3.57866%;
-    width: 48.21067%;
-    max-width: 100%; }
-    body.grid section.anatomy img:last-child {
-      margin-right: 0; }
-  body.grid section.anatomy ul {
-    display: block;
-    float: left;
-    margin-right: 3.57866%;
-    width: 48.21067%; }
-    body.grid section.anatomy ul:last-child {
-      margin-right: 0; }
-  body.grid section.anatomy h3 {
-    margin-bottom: 0; }
-  body.grid section.anatomy p {
-    margin-top: 6px; }
-body.grid ul.column-types {
-  zoom: 1;
-  display: block; }
-  body.grid ul.column-types:before, body.grid ul.column-types:after {
-    content: "";
-    display: table; }
-  body.grid ul.column-types:after {
-    clear: both; }
-  body.grid ul.column-types li {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 31.76157%; }
-    body.grid ul.column-types li:last-child {
+    width: 65.88078%;
+    margin-bottom: 40px; }
+    body.grid #grid-wrapper section.anatomy:before, body.grid #grid-wrapper section.anatomy:after {
+      content: "";
+      display: table; }
+    body.grid #grid-wrapper section.anatomy:after {
+      clear: both; }
+    body.grid #grid-wrapper section.anatomy:last-child {
       margin-right: 0; }
-    body.grid ul.column-types li img {
+    body.grid #grid-wrapper section.anatomy img {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%;
       max-width: 100%; }
+      body.grid #grid-wrapper section.anatomy img:last-child {
+        margin-right: 0; }
+    body.grid #grid-wrapper section.anatomy ul {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      body.grid #grid-wrapper section.anatomy ul:last-child {
+        margin-right: 0; }
+    body.grid #grid-wrapper section.anatomy h3 {
+      margin-bottom: 0; }
+    body.grid #grid-wrapper section.anatomy p {
+      margin-top: 6px; }
+  body.grid #grid-wrapper ul.column-types {
+    zoom: 1;
+    display: block; }
+    body.grid #grid-wrapper ul.column-types:before, body.grid #grid-wrapper ul.column-types:after {
+      content: "";
+      display: table; }
+    body.grid #grid-wrapper ul.column-types:after {
+      clear: both; }
+    body.grid #grid-wrapper ul.column-types li {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      body.grid #grid-wrapper ul.column-types li:last-child {
+        margin-right: 0; }
+      body.grid #grid-wrapper ul.column-types li img {
+        max-width: 100%; }
