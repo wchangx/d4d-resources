@@ -338,8 +338,7 @@ section.container {
   margin-left: auto;
   margin-right: auto;
   background: url("/images/shadowing.png") center top no-repeat;
-  border-top: 1px solid #eee;
-  padding-top: 1.618em; }
+  border-top: 1px solid #eee; }
   section.container:before, section.container:after {
     content: "";
     display: table; }
@@ -348,7 +347,10 @@ section.container {
   section.container h1 {
     font-size: 2.66667em;
     font-weight: 600;
-    margin-bottom: 1.618em; }
+    margin-bottom: 0.809em;
+    line-height: 1.618em;
+    margin-top: 0;
+    padding-top: 0; }
 
 header {
   margin: 4.854em 0 4.045em 0;
@@ -366,6 +368,14 @@ header {
     color: #ad141e;
     line-height: 1em;
     margin: 0; }
+
+.content-container {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .content-container:last-child {
+    margin-right: 0; }
 
 a {
   padding-bottom: 1.11111em;
@@ -418,8 +428,8 @@ ul {
       display: block;
       position: absolute;
       top: -0.25em;
-      left: -1em;
-      font-size: 1em;
+      left: -2em;
+      font-size: 0.66667em;
       color: #ccc;
       -webkit-transition: all 0.15s ease-out 0;
       -moz-transition: all 0.15s ease-out 0;
@@ -433,7 +443,7 @@ ul {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 40.29137%; }
+  width: 48.82117%; }
   .column:last-child {
     margin-right: 0; }
   .column h2 {
@@ -445,10 +455,12 @@ ul {
 
 aside {
   margin-left: 2.35765%;
+  margin-right: 0;
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 14.70196%; }
+  width: 14.70196%;
+  margin-top: 1.618em; }
   aside:last-child {
     margin-right: 0; }
   aside li {
@@ -475,12 +487,15 @@ aside {
       color: #ad141e;
       display: block;
       width: 100%;
-      padding: .5em; }
+      padding: .5em;
+      text-align: center; }
       aside li.trail-map a:hover {
         color: white; }
 
-.content-container {
-  background: url("../images/shadowing.png") center top no-repeat; }
+body.home section.container {
+  background: none;
+  border-top: none;
+  padding-top: 0; }
 
 header a:hover h1 {
   color: #ad141e;
@@ -548,6 +563,9 @@ header a:hover h2 {
     font-size: 2.33333em;
     font-weight: 600; }
 
+body.home .content-container {
+  padding-top: 1.618em; }
+
 /*---------RWD---------*/
 @media screen and (max-width: 960px) {
   .content-container {
@@ -593,110 +611,228 @@ header a:hover h2 {
   body {
     font-size: 0.875em;
     padding: 0 3.236em; } }
-body.home section.container {
-  background: none;
-  border-top: none;
-  padding-top: 0; }
-
-body.principles #principles-wrapper ul {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 82.94039%; }
-  body.principles #principles-wrapper ul:last-child {
-    margin-right: 0; }
-  body.principles #principles-wrapper ul li {
-    zoom: 1;
-    display: block;
-    display: block;
-    float: left;
-    margin-right: 7.42297%;
-    width: 19.43277%;
-    margin-top: 0; }
-    body.principles #principles-wrapper ul li:before, body.principles #principles-wrapper ul li:after {
-      content: "";
-      display: table; }
-    body.principles #principles-wrapper ul li:after {
-      clear: both; }
-    body.principles #principles-wrapper ul li:last-child {
-      margin-right: 0; }
-    body.principles #principles-wrapper ul li:nth-child(4n) {
-      margin-right: 0; }
-    body.principles #principles-wrapper ul li header {
-      margin: 0 0 1em 0; }
-      body.principles #principles-wrapper ul li header img {
-        border: 1px solid #000;
-        max-width: 100%;
-        display: block;
-        float: left;
-        margin-right: 10.1484%;
-        width: 26.56773%; }
-        body.principles #principles-wrapper ul li header img:last-child {
-          margin-right: 0; }
-      body.principles #principles-wrapper ul li header h3 {
-        display: block;
-        float: left;
-        margin-right: 10.1484%;
-        width: 63.28387%;
-        font-size: 1.11111em; }
-        body.principles #principles-wrapper ul li header h3:last-child {
-          margin-right: 0; }
-
-body.grid #grid-wrapper {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 82.94039%; }
-  body.grid #grid-wrapper:last-child {
-    margin-right: 0; }
-  body.grid #grid-wrapper section.anatomy {
-    zoom: 1;
-    display: block;
+@media screen and (max-width: 540px) {
+  .content-container {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-bottom: 40px; }
-    body.grid #grid-wrapper section.anatomy:before, body.grid #grid-wrapper section.anatomy:after {
-      content: "";
-      display: table; }
-    body.grid #grid-wrapper section.anatomy:after {
-      clear: both; }
-    body.grid #grid-wrapper section.anatomy:last-child {
+    width: 100%; }
+    .content-container:last-child {
       margin-right: 0; }
-    body.grid #grid-wrapper section.anatomy img {
+
+  .column {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .column:last-child {
+      margin-right: 0; }
+
+  aside {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    aside .trail-map {
+      margin: 3.236em 0 0 0; }
+    aside:last-child {
+      margin-right: 0; } }
+body.principles .content-container li {
+  display: block;
+  float: left;
+  margin-right: 7.42297%;
+  width: 19.43277%;
+  vertical-align: baseline;
+  display: block; }
+  body.principles .content-container li:last-child {
+    margin-right: 0; }
+  body.principles .content-container li:nth-child(4n) {
+    margin-right: 0; }
+  body.principles .content-container li header {
+    margin: 0 0 1em 0; }
+    body.principles .content-container li header img {
+      border: 1px solid #000;
+      max-width: 100%;
       display: block;
       float: left;
-      margin-right: 3.57866%;
-      width: 48.21067%;
-      max-width: 100%; }
-      body.grid #grid-wrapper section.anatomy img:last-child {
+      margin-right: 10.1484%;
+      width: 26.56773%; }
+      body.principles .content-container li header img:last-child {
         margin-right: 0; }
-    body.grid #grid-wrapper section.anatomy ul {
+    body.principles .content-container li header h3 {
       display: block;
       float: left;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
-      body.grid #grid-wrapper section.anatomy ul:last-child {
+      margin-right: 10.1484%;
+      width: 63.28387%;
+      font-size: 1.11111em; }
+      body.principles .content-container li header h3:last-child {
         margin-right: 0; }
-    body.grid #grid-wrapper section.anatomy h3 {
-      margin-bottom: 0; }
-    body.grid #grid-wrapper section.anatomy p {
-      margin-top: 6px; }
-  body.grid #grid-wrapper ul.column-types {
-    zoom: 1;
-    display: block; }
-    body.grid #grid-wrapper ul.column-types:before, body.grid #grid-wrapper ul.column-types:after {
-      content: "";
-      display: table; }
-    body.grid #grid-wrapper ul.column-types:after {
-      clear: both; }
-    body.grid #grid-wrapper ul.column-types li {
+
+@media screen and (max-width: 960px) {
+  body.principles .content-container ul li {
+    display: block;
+    float: left;
+    margin-right: 10.1484%;
+    width: 26.56773%; }
+    body.principles .content-container ul li:last-child {
+      margin-right: 0; }
+    body.principles .content-container ul li:nth-child(3n) {
+      margin-right: 0; } }
+body.grid .content-container section.anatomy {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-bottom: 1.618em; }
+  body.grid .content-container section.anatomy:last-child {
+    margin-right: 0; }
+  body.grid .content-container section.anatomy img {
+    display: block;
+    float: left;
+    margin-right: 3.57866%;
+    width: 48.21067%;
+    max-width: 100%; }
+    body.grid .content-container section.anatomy img:last-child {
+      margin-right: 0; }
+  body.grid .content-container section.anatomy ul {
+    display: block;
+    float: left;
+    margin-right: 3.57866%;
+    width: 48.21067%; }
+    body.grid .content-container section.anatomy ul:last-child {
+      margin-right: 0; }
+  body.grid .content-container section.anatomy h3 {
+    margin-bottom: 0; }
+  body.grid .content-container section.anatomy p {
+    margin-top: 6px; }
+body.grid .content-container ul.column-types li {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  body.grid .content-container ul.column-types li:last-child {
+    margin-right: 0; }
+  body.grid .content-container ul.column-types li img {
+    max-width: 100%; }
+
+@media screen and (max-width: 900px) {
+  body.grid section.anatomy {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    body.grid section.anatomy:last-child {
+      margin-right: 0; }
+    body.grid section.anatomy ul {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 31.76157%; }
-      body.grid #grid-wrapper ul.column-types li:last-child {
+      width: 100%; }
+      body.grid section.anatomy ul:last-child {
         margin-right: 0; }
-      body.grid #grid-wrapper ul.column-types li img {
-        max-width: 100%; }
+
+  ul.column-types li {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    ul.column-types li:last-child {
+      margin-right: 0; } }
+body.type .content-container section.line-height {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 1.618em;
+  margin-bottom: 1.618em; }
+  body.type .content-container section.line-height:last-child {
+    margin-right: 0; }
+  body.type .content-container section.line-height hgroup.title h2 {
+    font-size: 2em; }
+  body.type .content-container section.line-height hgroup.title p {
+    font-style: italic;
+    font-weight: 100; }
+  body.type .content-container section.line-height hgroup.example {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    body.type .content-container section.line-height hgroup.example:last-child {
+      margin-right: 0; }
+    body.type .content-container section.line-height hgroup.example #example-1 {
+      line-height: 1em; }
+    body.type .content-container section.line-height hgroup.example #example-2 {
+      line-height: 1.3em; }
+    body.type .content-container section.line-height hgroup.example #example-3 {
+      line-height: 1.6em; }
+    body.type .content-container section.line-height hgroup.example #example-4 {
+      line-height: 2em; }
+body.type .content-container section.anatomy {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  border-bottom: 3px solid #eee;
+  padding-bottom: 1.618em;
+  margin-bottom: 1.618em; }
+  body.type .content-container section.anatomy:last-child {
+    margin-right: 0; }
+  body.type .content-container section.anatomy hgroup {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    body.type .content-container section.anatomy hgroup:last-child {
+      margin-right: 0; }
+  body.type .content-container section.anatomy img {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    max-width: 100%; }
+    body.type .content-container section.anatomy img:last-child {
+      margin-right: 0; }
+  body.type .content-container section.anatomy ul {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    body.type .content-container section.anatomy ul:last-child {
+      margin-right: 0; }
+  body.type .content-container section.anatomy h3 {
+    margin-bottom: 0; }
+  body.type .content-container section.anatomy p {
+    margin-top: 6px; }
+body.type .content-container ul.column-types li {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  body.type .content-container ul.column-types li:last-child {
+    margin-right: 0; }
+  body.type .content-container ul.column-types li img {
+    max-width: 100%; }
+
+@media screen and (max-width: 900px) {
+  body.type section.anatomy img {
+    display: block;
+    float: left;
+    margin-right: 38.19821%;
+    width: 100%; }
+    body.type section.anatomy img:last-child {
+      margin-right: 0; }
+  body.type section.anatomy ul {
+    display: block;
+    float: left;
+    margin-right: 38.19821%;
+    width: 100%; }
+    body.type section.anatomy ul:last-child {
+      margin-right: 0; }
+  body.type hgroup.example {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    body.type hgroup.example:last-child {
+      margin-right: 0; } }

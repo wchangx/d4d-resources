@@ -1,11 +1,9 @@
 body.grid {
-	#grid-wrapper {
-		@include span-columns(10);
+	.content-container {
 
 	  section.anatomy {
-	    @include row();
-	    @include span-columns(8);
-	    margin-bottom: 40px;
+	    @include span-columns(12);
+	    margin-bottom: $fg-gutter;
 
 	    img {
 	      @include span-columns(4 of 8);
@@ -26,7 +24,6 @@ body.grid {
 	  }
 
 	  ul.column-types {
-	    @include row();
 
 	    li {
 	      @include span-columns(4);
@@ -38,3 +35,20 @@ body.grid {
 	  }
 	}
 }
+
+@media screen and (max-width: 900px) {
+	
+	body.grid section.anatomy {
+		@include span-columns(6);
+		
+		ul { 
+			@include span-columns(12);
+		}
+		
+	}
+
+	ul.column-types li {
+		@include span-columns(6);
+	}
+}
+

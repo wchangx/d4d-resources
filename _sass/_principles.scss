@@ -1,36 +1,38 @@
 body.principles {
 	
-	#principles-wrapper {
-
-	  ul {
+	.content-container {
 		
-			@include span-columns(10);
-		
-	    li {
-	      @include row;
-	      @include span-columns(1 of 4);
-	      @include nth-omega(4n);
-				margin-top: 0;
+    li {
+      @include span-columns(1 of 4);
+      @include nth-omega(4n);
+			vertical-align: baseline;
+			display: block;
 
+      header {
 
-	      header {
-	
-					margin: 0 0 1em 0;
-      
-	  			img {
-	          border: 1px solid #000;
-	          max-width: 100%;
-	          @include span-columns(1 of 3);
-						}
+				margin: 0 0 1em 0;
+     
+  			img {
+          border: 1px solid #000;
+          max-width: 100%;
+          @include span-columns(1 of 3);
+					}
 
-	        h3 {
-	          @include span-columns(2 of 3);
-	          font-size: em(20, 18);
-	        }
-
-	      }
+        h3 {
+          @include span-columns(2 of 3);
+          font-size: em(20, 18);
+        }
 	    }
 	  }
 	}
 }
+
+@media screen and (max-width: $break1) {
+	
+	body.principles .content-container ul li {		
+		@include span-columns(1 of 3);
+		@include nth-omega (3n);	
+	}
+}
+
 
