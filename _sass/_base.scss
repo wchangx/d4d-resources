@@ -12,6 +12,7 @@ section.container {
   @include outer-container;
 	background: url("/images/shadowing.png") center top no-repeat;
 	border-top: 1px solid #eee;	
+	padding-top: lh();
 	
 	h1 {
 		font-size: em(48, 18);
@@ -149,7 +150,6 @@ aside {
   margin-left: flex-gutter();
 	@include omega;
   @include span-columns(2);
-	margin-top: lh();
 
 	li {
 		margin-bottom: 0;
@@ -195,7 +195,6 @@ aside {
 body.home section.container {
 	background: none;
 	border-top: none;
-	padding-top: 0;
 }
 
 header a:hover {
@@ -208,7 +207,6 @@ header a:hover {
 	margin: lh(4) 0 lh(5) 0;
 	background-color: $red;
 	@include button(simple, $red);
-	
 	
 	a {
 		display: block;
@@ -223,9 +221,6 @@ header a:hover {
 	}
 }
 
-body.home .content-container {
-	padding-top: lh();
-}
 
 
 

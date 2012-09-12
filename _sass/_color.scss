@@ -1,0 +1,20 @@
+body.color {
+	.content-container {
+		
+		section {
+			@include span-columns(12);
+			border-bottom: 3px solid #eee;
+			padding-bottom: lh();
+			margin-bottom: lh();
+			img {
+				max-width: 100%;
+			}
+			p {
+				text-align: center;
+			}
+			ul {
+				@include span-columns(6);
+			}
+		}
+	}
+}
