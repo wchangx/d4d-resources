@@ -3,26 +3,27 @@ body.principles {
 	.content-container {
 		
     li {
-      @include span-columns(1 of 4);
-      @include nth-omega(4n);
+      @include span-columns(1 of 2);
 			vertical-align: baseline;
 			display: block;
+			@include nth-omega(2n);
 
-      header {
+  
+ 			header {
+      	@include span-columns(1 of 3);
+				img {border: 1px solid #eee; max-width: 100%; }
+				margin-top: 0;
+			}
 
-				margin: 0 0 1em 0;
-     
-  			img {
-          border: 1px solid #000;
-          max-width: 100%;
-          @include span-columns(1 of 3);
-					}
+      section {
+      	@include span-columns(2 of 3);
+				font-size: em(20, 18);
+				@include omega;
+				h3 {
+					margin-top: 0;
+				}
+			}
 
-        h3 {
-          @include span-columns(2 of 3);
-          font-size: em(20, 18);
-        }
-	    }
 	  }
 	}
 }

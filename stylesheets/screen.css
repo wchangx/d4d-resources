@@ -352,6 +352,10 @@ section.container {
     line-height: 1.618em;
     margin-top: 0;
     padding-top: 0; }
+  section.container h3, section.container strong {
+    font-family: "skolar-1","skolar-2",serif;
+    font-style: italic;
+    font-weight: 400; }
 
 header {
   margin: 4.854em 0 4.045em 0;
@@ -565,38 +569,43 @@ section.footer {
     text-align: center;
     color: white;
     font-size: 2.33333em;
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
+    font-style: normal; }
 
 body.principles .content-container li {
   display: block;
   float: left;
-  margin-right: 7.42297%;
-  width: 19.43277%;
+  margin-right: 16.03631%;
+  width: 41.98184%;
   vertical-align: baseline;
   display: block; }
   body.principles .content-container li:last-child {
     margin-right: 0; }
-  body.principles .content-container li:nth-child(4n) {
+  body.principles .content-container li:nth-child(2n) {
     margin-right: 0; }
   body.principles .content-container li header {
-    margin: 0 0 1em 0; }
+    display: block;
+    float: left;
+    margin-right: 10.1484%;
+    width: 26.56773%;
+    margin-top: 0; }
+    body.principles .content-container li header:last-child {
+      margin-right: 0; }
     body.principles .content-container li header img {
-      border: 1px solid #000;
-      max-width: 100%;
-      display: block;
-      float: left;
-      margin-right: 10.1484%;
-      width: 26.56773%; }
-      body.principles .content-container li header img:last-child {
-        margin-right: 0; }
-    body.principles .content-container li header h3 {
-      display: block;
-      float: left;
-      margin-right: 10.1484%;
-      width: 63.28387%;
-      font-size: 1.11111em; }
-      body.principles .content-container li header h3:last-child {
-        margin-right: 0; }
+      border: 1px solid #eee;
+      max-width: 100%; }
+  body.principles .content-container li section {
+    display: block;
+    float: left;
+    margin-right: 10.1484%;
+    width: 63.28387%;
+    font-size: 1.11111em;
+    margin-right: 0; }
+    body.principles .content-container li section:last-child {
+      margin-right: 0; }
+    body.principles .content-container li section h3 {
+      margin-top: 0; }
 
 body.grid .content-container section.anatomy {
   display: block;
@@ -795,6 +804,14 @@ body.color .content-container section {
     body.type .content-container section.line-height hgroup.example:last-child {
       margin-right: 0; }
     body.type .content-container section.line-height hgroup.example:nth-child(2n) {
+      margin-right: 0; }
+
+  body.principles .content-container li {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%; }
+    body.principles .content-container li:last-child {
       margin-right: 0; } }
 @media screen and (max-width: 838px) {
   .content-container {

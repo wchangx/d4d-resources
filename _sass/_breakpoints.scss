@@ -19,6 +19,13 @@
 			hgroup.example {@include span-columns(1 of 2); @include nth-omega(2n);}
 		}	
 	}
+	
+	body.principles {
+		.content-container {
+			li {@include span-columns(12);}
+		}
+	}
+	
 }
 
 @media screen and (max-width: $break2) {
