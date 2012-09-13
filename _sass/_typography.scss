@@ -81,13 +81,3 @@ body.type {
 	}
 }
 
-body.type {
-	section.anatomy {
-		img { @include span-columns(12); }
-		ul { @include span-columns(12); }
-		hgroup { @include span-columns(12); }
-	}
-	hgroup.example {
-		@include span-columns(6);
-	}
-}

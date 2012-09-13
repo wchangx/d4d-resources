@@ -26,13 +26,3 @@ body.principles {
 	  }
 	}
 }
-
-@media screen and (max-width: $break1) {
-	
-	body.principles .content-container ul li {		
-		@include span-columns(1 of 3);
-		@include nth-omega (3n);	
-	}
-}
-
-

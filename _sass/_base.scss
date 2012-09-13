@@ -202,15 +202,21 @@ header a:hover {
 	h2 {color: black; @include transition;}
 }
 
+section.footer {
+	background: none;
+	border-top: none;
+}
+
 #sign-up {
-	width: 100%;
-	margin: lh(4) 0 lh(5) 0;
+	margin: lh(3) 0 lh(5) 0;
 	background-color: $red;
 	@include button(simple, $red);
+	width: 100%;
 	
 	a {
 		display: block;
 		padding: .5em 0;
+		line-height: lh(2);
 	}
 	
 	h3 {
@@ -225,54 +231,3 @@ header a:hover {
 
 
 
-/*---------RWD---------*/
-
-@media screen and (max-width: $break1) {
-	.content-container {
-		@include span-columns(10);
-	}
-	.column {
-		@include span-columns(12);
-	}
-}
-
-@media screen and (max-width: $break2) {
-
-	.content-container {
-		@include span-columns(9);
-	}
-	.column {
-		@include span-columns(12);
-	}
-	
-	aside {
-		@include span-columns(3);
-	}
-
-}
-
-@media screen and (max-width: $break3) {
-	body 	{
-		font-size: em(14);
-		padding: 0 lh(2);
-	}
-}
-
-@media screen and (max-width: $break4) {
-
-	.content-container {
-		@include span-columns(12);
-	}
-
-	.column {
-		@include span-columns(12);
-	}
-
-	aside {
-		
-		.trail-map {
-			margin: lh(2) 0 0 0;
-		}
-		@include span-columns(12);
-	}			
-}
