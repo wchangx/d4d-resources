@@ -597,36 +597,24 @@ section.footer {
 body.principles .content-container li {
   display: block;
   float: left;
-  margin-right: 16.03631%;
-  width: 41.98184%;
+  margin-right: 2.35765%;
+  width: 48.82117%;
   vertical-align: baseline;
   display: block; }
   body.principles .content-container li:last-child {
     margin-right: 0; }
   body.principles .content-container li:nth-child(2n) {
     margin-right: 0; }
-  body.principles .content-container li header {
-    display: block;
-    float: left;
-    margin-right: 10.1484%;
-    width: 26.56773%;
-    margin-top: 0; }
-    body.principles .content-container li header:last-child {
-      margin-right: 0; }
-    body.principles .content-container li header img {
-      border: 1px solid #eee;
-      max-width: 100%; }
   body.principles .content-container li section {
-    display: block;
-    float: left;
-    margin-right: 10.1484%;
-    width: 63.28387%;
-    font-size: 1.11111em;
-    margin-right: 0; }
-    body.principles .content-container li section:last-child {
-      margin-right: 0; }
+    font-size: 1.11111em; }
     body.principles .content-container li section h3 {
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
+    body.principles .content-container li section img {
+      border: 1px solid #eee;
+      max-width: 80%;
+      margin: 1.618em 10% 0 10%;
+      opacity: .75; }
     body.principles .content-container li section p {
       margin-top: .5em; }
 
