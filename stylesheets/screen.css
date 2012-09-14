@@ -722,6 +722,15 @@ body.type .content-container section.anatomy {
     max-width: 100%; }
     body.type .content-container section.anatomy img:last-child {
       margin-right: 0; }
+  body.type .content-container section.anatomy section.anatomy.wide {
+    width: 100%; }
+    body.type .content-container section.anatomy section.anatomy.wide img {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 100%; }
+      body.type .content-container section.anatomy section.anatomy.wide img:last-child {
+        margin-right: 0; }
   body.type .content-container section.anatomy ul {
     display: block;
     float: left;
@@ -742,6 +751,9 @@ body.type .content-container ul.column-types li {
     margin-right: 0; }
   body.type .content-container ul.column-types li img {
     max-width: 100%; }
+
+body.type .content-container section.anatomy.wide img {
+  width: 100%; }
 
 body.color .content-container section {
   display: block;
@@ -821,8 +833,8 @@ body.color .content-container section {
   body.type .content-container section.line-height hgroup.example {
     display: block;
     float: left;
-    margin-right: 16.03631%;
-    width: 41.98184%; }
+    margin-right: 2.35765%;
+    width: 48.82117%; }
     body.type .content-container section.line-height hgroup.example:last-child {
       margin-right: 0; }
     body.type .content-container section.line-height hgroup.example:nth-child(2n) {

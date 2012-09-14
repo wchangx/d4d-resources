@@ -54,6 +54,11 @@ body.type {
 	      @include span-columns(6);
 	      max-width: 100%;
 	    }
+	
+			section.anatomy.wide {
+				img {@include span-columns(12);}
+				width: 100%;
+			}
 
 	    ul {
 	      @include span-columns(6);
@@ -66,6 +71,8 @@ body.type {
 	    p {
 	      margin-top: 6px;
 	    }
+	
+
 	  }
 
 	  ul.column-types {
@@ -81,3 +88,6 @@ body.type {
 	}
 }
 
+body.type .content-container section.anatomy.wide img {
+	width: 100%;
+}

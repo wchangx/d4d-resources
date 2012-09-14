@@ -14,7 +14,7 @@
 			ul { @include span-columns(12);}
 		}
 		section.line-height {
-			hgroup.example {@include span-columns(1 of 2); @include nth-omega(2n);}
+			hgroup.example {@include span-columns(6); @include nth-omega(2n);}
 		}	
 	}
 	
