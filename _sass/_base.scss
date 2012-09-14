@@ -10,9 +10,6 @@ body {
 
 section.container {
   @include outer-container;
-	background: url("/images/shadowing.png") center top no-repeat;
-	border-top: 1px solid #eee;	
-	padding-top: lh();
 	
 	h1 {
 		font-size: em(48, 18);
@@ -23,7 +20,6 @@ section.container {
 		padding-top: 0;
 	}
 	
-	
 	h3, strong {
 		font-family:"skolar-1","skolar-2",serif;
 		font-style: italic;
@@ -31,10 +27,15 @@ section.container {
 	}	
 }
 
-
-header {
+header.title {
+  @extend .show-title;
   margin: lh(3) 0 lh(2.5) 0;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  @include transition(all, 1s, ease-out);
+  z-index: 1;
+	opacity: 0;
 
   h1 {
     font-size: em(48, 18);
@@ -56,6 +57,17 @@ header {
 
 .content-container {
 	@include span-columns(10);
+	border-top: 3px solid #eee;
+	padding-top: lh();
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+	@include transition(all, .5s, ease-out);
+}
+
+body.home .content-container {
+	border-top: none;
+	padding-top: 0;
 }
 
 a {
@@ -138,7 +150,6 @@ ul {
 
 }
 
-
 .column {
   @include span-columns(6);
 
@@ -189,6 +200,7 @@ aside {
 			width: 100%;
 			padding: .5em;
 			text-align: center;
+			line-height: 1.3em;
 			
 			&:hover {
 				color: white;
@@ -196,8 +208,6 @@ aside {
 		}
 	}
 }
-
-
 
 body.home section.container {
 	background: none;
@@ -235,3 +245,5 @@ section.footer {
 		font-style: normal;
 	}
 }
+
+

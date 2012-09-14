@@ -1,0 +1,31 @@
+//************************************************************************//
+// Keyframes for Animations
+//************************************************************************//
+
+// Show title
+.show-title {
+  @include animation-name(show-title);
+  @include animation-delay(.1s);
+  @include animation-duration(0.7s);
+  @include animation-fill-mode(forwards);
+  @include animation-timing-function(ease-out);
+}
+@mixin show-title {
+  0% {
+    opacity: 0;
+    @include transform(scale(1.5, 1.5));
+    top: -1000px;
+  }
+  70% {
+    @include transform(scale(0.95, 0.95));
+    top: 30px;
+  }
+  100% {
+    opacity: 1;
+    @include transform(scale(1, 1));
+    top: 0px;
+  }
+}
+@-webkit-keyframes show-title { @include show-title; }
+   @-moz-keyframes show-title { @include show-title; }
+        @keyframes show-title { @include show-title; }
