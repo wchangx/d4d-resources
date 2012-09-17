@@ -28,14 +28,17 @@ section.container {
 }
 
 header.title {
-  @extend .show-title;
   margin: lh(3) 0 lh(2.5) 0;
   text-align: center;
   overflow: hidden;
   position: relative;
   @include transition(all, 1s, ease-out);
   z-index: 1;
-	opacity: 0;
+
+  body.home & {
+    @extend .show-title;
+    opacity: 0;
+  }
 
   h1 {
     font-size: em(48, 18);
