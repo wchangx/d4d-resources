@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="stylesheets/screen.css" />
   </head>
 
-	<header class="title">
-	  <hgroup>
-			<a href="/">
-		    <h1>Design for Developers</h1>
-		    <h2>Resources &amp; Reading List</h2>
-			</a>
-	  </hgroup>
-	</header>
-
   <body class="{{ page.keyword }}">
-    <section class="container">
+    <header class="title">
+      <hgroup>
+        <a href="/">
+          <h1>Design for Developers</h1>
+          <h2>Resources &amp; Reading List</h2>
+        </a>
+      </hgroup>
+    </header>
 
-      <section>
+    <section class="container">
+      <section class="content-container">
         {{ content }}
       </section>
 
       <aside>
         <ul>
-					<li class="trail-map"><a href="http://github.com/thoughtbot/trail-map">thoughtbot<br/>trail-maps</a></li>
           <li>
             <h2>Workshop Cheatsheets</h2>
             <ul>
@@ -38,16 +36,22 @@
               <li><a href="/d4d-resources/color.html">Color</a></li>
             </ul>
           </li>
+
+          <li>
+            <h2>D4D Links</h2>
+            <ul class="self-promo">
+              <li><a href="http://learn.thoughtbot.com">Learn at thoughtbot</a></li>
+              <li><a href="https://learn.thoughtbot.com/courses/2-design-for-developers">Take the Design for Developers Course</a></li>
+            </ul>
+          </li>
         </ul>
+
       </aside>
 
     </section>
 
-		<!-- <section class="container footer"> -->
-		<!-- 	<div id="sign-up"> -->
-		<!-- 		<a href="#"><h3>Sign up for the next Design for Developers</h3> -->
-		<!-- 	</div> -->
-		<!-- </section> -->
-		
+    <!-- <footer> -->
+    <!--   <a href="https://learn.thoughtbot.com/courses/2-design-for-developers">Take the Design for Developers Course</a> -->
+    <!-- </footer> -->
   </body>
 </html>

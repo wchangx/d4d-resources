@@ -5,77 +5,9 @@ body {
   line-height: $lh;
   font-size: em(18);
   padding: 0 lh(3);
-	border-top: 5px solid $red;
-}
-
-section.container {
-  @include outer-container;
-	
-	h1 {
-		font-size: em(48, 18);
-		font-weight: 600;
-		margin-bottom: lh(.5);
-		line-height: lh();
-		margin-top: 0;
-		padding-top: 0;
-	}
-	
-	h3, strong {
-		font-family:"skolar-1","skolar-2",serif;
-		font-style: italic;
-		font-weight: 400;
-	}	
-}
-
-header.title {
-  margin: lh(3) 0 lh(2.5) 0;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  @include transition(all, 1s, ease-out);
-  z-index: 1;
-
-  body.home & {
-    @extend .show-title;
-    opacity: 0;
-  }
-
-  h1 {
-    font-size: em(48, 18);
-    font-weight: 100;
-    color: black;
-    line-height: 1em;
-    margin: 0;
-  }
-
-  h2 {
-    font-size: em(72, 18);
-    font-weight: 800;
-    margin: 0 0 lh(.75) 0;
-    color: $red;
-    line-height: 1em;
-    margin: 0;
-  }
-}
-
-.content-container {
-	@include span-columns(10);
-	border-top: 3px solid #eee;
-	padding-top: lh();
-  z-index: 1;
-  overflow: hidden;
-  position: relative;
-	@include transition(all, .5s, ease-out);
-}
-
-body.home .content-container {
-	border-top: none;
-	padding-top: 0;
 }
 
 a {
-  padding-bottom: em(20, 18);
-  position: relative;
   text-decoration: none;
   color: #5d5d5d;
   @include transition;
@@ -83,44 +15,6 @@ a {
   &:hover {
     color: $red;
   }
-
-  &:after {
-    color: #bbb;
-    font-size: em(12, 18);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    @include position(absolute,  0 0 0px 0px);
-  }
-
-  &.site:after {
-    content: "site";
-  }
-
-  &.video:after {
-    content: "video";
-  }
-
-  &.article:after {
-    content: "article";
-  }
-
-  &.book:after {
-    content: "book";
-  }
-
-  &.app:after {
-    content: "app";
-  }
-
-  &.code:after {
-    content: "code";
-  }
-}
-
-h2 {
-  font-size: em(18, 18);
-  font-weight: bold;
-  margin: 0 0 10px 0;
 }
 
 ul {
@@ -149,102 +43,203 @@ ul {
         }
       }
     }
-  }
 
-}
-
-.column {
-  @include span-columns(6);
-
-  h2 {
-    border-top:3px solid #f3f3f3;
-    padding-top: lh(.5);
-    margin-top: lh(2);
-
-    &:first-child {
-      margin-top: 0;
+    p {
+      font-size: em(14, 18);
+      line-height: lh(.75);
+      color: #999;
+      margin: 0;
     }
   }
 }
 
-aside {
-  margin-left: flex-gutter();
-	@include omega;
-  @include span-columns(2);
+h2 {
+  font-size: em(18, 18);
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
 
-	li {
-		margin-bottom: 0;
-	}
-	
-	a {
-		margin-bottom: 0;
-		color: #ccc;
-	}
 
-	h2 {
-    border-top:3px solid #f3f3f3;
-    padding-top: lh(.5);
-    margin-top: lh(2);
+header.title {
+  padding: lh() lh(3) lh();
+  margin:0 (-(lh(3))) lh(1);
+  overflow: hidden;
+  position: relative;
+  @include transition();
+  z-index: 1;
+  background: $red;
+
+  hgroup {
+    @include outer-container();
   }
-	
-	li.trail-map {
-		border: 1px solid #ccc;
-		padding: 0;
-		
-		&:hover {
-			background-color: $red;
-			@include transition;
-			border: 1px solid white;
-		}
-		
-		a {
-			color: $red;
-			display:block;
-			width: 100%;
-			padding: .5em;
-			text-align: center;
-			line-height: 1.3em;
-			
-			&:hover {
-				color: white;
-			}
-		}
-	}
+
+  &:hover {
+    background: black;
+  }
+
+  body.home & {
+    padding: lh(4) 0 lh(3.5) 0;
+
+    hgroup {
+      text-align: center;
+    }
+
+    h1, h2 {
+      display: block;
+    }
+
+    h1 {
+      font-size: em(48, 18);
+      font-weight: 100;
+      color: rgba(#fff, .6);
+      line-height: 1em;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: em(72, 18);
+      font-weight: 800;
+      margin: 0 0 lh(.75) 0;
+      color: #fff;
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+
+  h1 {
+    font-size: em(24, 18);
+    font-weight: 100;
+    color: rgba(#fff, .6);
+    line-height: 1em;
+    margin: 0 8px 0 0;
+    @include inline-block;
+  }
+
+  h2 {
+    font-size: em(24, 18);
+    font-weight: 600;
+    margin: 0 0 lh(.75) 0;
+    color: #fff;
+    line-height: 1em;
+    margin: 0;
+    @include inline-block;
+  }
 }
 
-body.home section.container {
-	background: none;
-	border-top: none;
-}
+section.container {
+  @include outer-container;
 
-header a:hover {
-	h1 {color: $red; @include transition;}
-	h2 {color: black; @include transition;}
+  h1 {
+    font-size: em(48, 18);
+    font-weight: 600;
+    margin-bottom: lh(.5);
+    line-height: lh();
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  h3, strong {
+    font-family:"skolar-1","skolar-2",serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  section.content-container {
+    @include span-columns(10);
+    padding-top: lh();
+
+    div.column {
+      @include span-columns(5 10);
+
+      h2 {
+        border-top:3px solid #f3f3f3;
+        padding-top: lh(.5);
+        margin-top: lh(2);
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+
+      // a {
+      //   position: relative;
+      //   padding-bottom: em(20, 18);
+
+      //   &:after {
+      //     color: #bbb;
+      //     font-size: em(12, 18);
+      //     text-transform: uppercase;
+      //     letter-spacing: 1px;
+      //     @include position(absolute,  0 0 0px 0px);
+      //   }
+
+      //   &.site:after {
+      //     content: "site";
+      //   }
+
+      //   &.video:after {
+      //     content: "video";
+      //   }
+
+      //   &.article:after {
+      //     content: "article";
+      //   }
+
+      //   &.book:after {
+      //     content: "book";
+      //   }
+
+      //   &.app:after {
+      //     content: "app";
+      //   }
+
+      //   &.code:after {
+      //     content: "code";
+      //   }
+      // }
+    }
+  }
+
+
+  aside {
+    @include omega;
+    @include span-columns(2);
+    padding-top: lh();
+    opacity: .6;
+    @include transition;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    li {
+      margin-bottom: 0;
+    }
+
+    a {
+      margin-bottom: 0;
+      color: #999;
+    }
+
+    h2 {
+      border-top:3px solid #f3f3f3;
+      padding-top: lh(.5);
+    }
+
+    ul {
+      margin-bottom: lh(2);
+
+      li {
+        font-weight: 100;
+      }
+    }
+  }
 }
 
 section.footer {
-	background: none;
-	border-top: none;
+  background: none;
+  border-top: none;
+  @include outer-container;
 }
 
-#sign-up {
-	margin: lh(3) 0 lh(5) 0;
-	background-color: $red;
-	@include button(simple, $red);
-	width: 100%;
-	
-	a {
-		display: block;
-		padding: .5em 0;
-		line-height: lh(2);
-	}
-	
-	h3 {
-		text-align: center;
-		color: white;
-		font-size: em(42, 18);
-		font-weight: 600;
-	  font-family: "proxima-nova-1","proxima-nova-2", "helvetica neue", sans-serif;
-		font-style: normal;
-	}
-}
