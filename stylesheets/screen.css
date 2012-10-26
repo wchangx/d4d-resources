@@ -4,10 +4,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  font: 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.618em; }
-
 /* normalize.css v2.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
 HTML5 display definitions
@@ -349,11 +345,10 @@ ul {
     font-weight: normal;
     margin: 0 0 1em 0;
     position: relative; }
-    ul li.star a:before {
+    ul li.star a:before, ul li.learn a:before {
       content: "★";
       display: block;
       position: absolute;
-      top: -0.25em;
       left: -2em;
       font-size: 0.66667em;
       color: #ccc;
@@ -362,8 +357,15 @@ ul {
       -ms-transition: all 0.15s ease-out 0;
       -o-transition: all 0.15s ease-out 0;
       transition: all 0.15s ease-out 0; }
-    ul li.star a:hover:before {
+    ul li.star a:hover:before, ul li.learn a:hover:before {
       color: #ad141e; }
+    ul li.learn a {
+      color: #ad141e;
+      font-weight: bold; }
+      ul li.learn a:before {
+        color: #888; }
+      ul li.learn a:hover {
+        color: #444; }
     ul li p {
       font-size: 0.77778em;
       line-height: 1.2135em;
@@ -371,7 +373,7 @@ ul {
       margin: 0; }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.33333em;
   font-weight: bold;
   margin: 0 0 10px 0; }
 
@@ -389,7 +391,7 @@ header.title {
   background: #ad141e; }
   header.title hgroup {
     zoom: 1;
-    max-width: 75.99879em;
+    max-width: 68em;
     text-align: left;
     margin-left: auto;
     margin-right: auto; }
@@ -445,7 +447,7 @@ header.title {
 
 section.container {
   zoom: 1;
-  max-width: 75.99879em;
+  max-width: 68em;
   text-align: left;
   margin-left: auto;
   margin-right: auto; }
@@ -455,12 +457,14 @@ section.container {
   section.container:after {
     clear: both; }
   section.container h1 {
-    font-size: 2.66667em;
-    font-weight: 600;
-    margin-bottom: 0.809em;
+    font-size: 1.77778em;
+    font-weight: 100;
+    margin-bottom: 1.618em;
     line-height: 1.618em;
     margin-top: 0;
-    padding-top: 0; }
+    border-top: 3px solid #f3f3f3;
+    padding-top: 0.4045em;
+    color: #999; }
   section.container h3, section.container strong {
     font-family: "skolar-1","skolar-2",serif;
     font-style: italic;
@@ -520,7 +524,7 @@ section.footer {
   background: none;
   border-top: none;
   zoom: 1;
-  max-width: 75.99879em;
+  max-width: 68em;
   text-align: left;
   margin-left: auto;
   margin-right: auto; }
@@ -530,29 +534,34 @@ section.footer {
   section.footer:after {
     clear: both; }
 
+body.principles .content-container ul {
+  zoom: 1;
+  display: block; }
+  body.principles .content-container ul:before, body.principles .content-container ul:after {
+    content: "";
+    display: table; }
+  body.principles .content-container ul:after {
+    clear: both; }
 body.principles .content-container li {
   display: block;
   float: left;
-  margin-right: 3.28774%;
-  width: 48.35613%;
+  margin-right: 3.97141%;
+  width: 22.02145%;
   vertical-align: baseline;
-  display: block; }
+  display: block;
+  margin-bottom: 3.236em; }
   body.principles .content-container li:last-child {
     margin-right: 0; }
-  body.principles .content-container li:nth-child(2n) {
+  body.principles .content-container li:nth-child(4n) {
     margin-right: 0; }
-  body.principles .content-container li section {
-    font-size: 1.11111em; }
-    body.principles .content-container li section h3 {
-      margin: 0;
-      text-align: center; }
-    body.principles .content-container li section img {
-      border: 1px solid #eee;
-      max-width: 80%;
-      margin: 1.618em 10% 0 10%;
-      opacity: .75; }
-    body.principles .content-container li section p {
-      margin-top: .5em; }
+  body.principles .content-container li section img {
+    border: 1px solid #eee;
+    max-width: 100%; }
+  body.principles .content-container li section h2 {
+    margin: 0.4045em 0 0;
+    margin-right: 0;
+    text-align: center;
+    color: #666; }
 
 body.grid .content-container section.anatomy {
   display: block;
@@ -567,6 +576,7 @@ body.grid .content-container section.anatomy {
     float: left;
     margin-right: 5.01404%;
     width: 47.49298%;
+    border: 1px solid #eee;
     max-width: 100%; }
     body.grid .content-container section.anatomy img:last-child {
       margin-right: 0; }
@@ -589,12 +599,13 @@ body.grid .content-container ul.column-types li {
   body.grid .content-container ul.column-types li:last-child {
     margin-right: 0; }
   body.grid .content-container ul.column-types li img {
-    max-width: 100%; }
+    max-width: 100%;
+    border: 1px solid #eee; }
 
 body.type .content-container section.line-height {
   display: block;
   float: left;
-  margin-right: 3.28774%;
+  margin-right: 3.97141%;
   width: 100%;
   border-bottom: 3px solid #eee;
   padding-bottom: 1.618em;
@@ -622,50 +633,52 @@ body.type .content-container section.line-height {
     body.type .content-container section.line-height hgroup.example #example-4 {
       line-height: 2em; }
 body.type .content-container section.anatomy {
+  border-bottom: 3px solid #eee;
+  padding-bottom: 1.618em;
+  margin-bottom: 1.618em;
+  zoom: 1;
+  display: block; }
+  body.type .content-container section.anatomy:before, body.type .content-container section.anatomy:after {
+    content: "";
+    display: table; }
+  body.type .content-container section.anatomy:after {
+    clear: both; }
+  body.type .content-container section.anatomy article {
+    display: block;
+    float: left;
+    margin-right: 3.97141%;
+    width: 48.0143%; }
+    body.type .content-container section.anatomy article:last-child {
+      margin-right: 0; }
+  body.type .content-container section.anatomy p {
+    margin-top: 6px; }
+body.type .content-container section.line-letter {
+  zoom: 1;
   display: block;
-  float: left;
-  margin-right: 3.28774%;
-  width: 100%;
   border-bottom: 3px solid #eee;
   padding-bottom: 1.618em;
   margin-bottom: 1.618em; }
-  body.type .content-container section.anatomy:last-child {
+  body.type .content-container section.line-letter:before, body.type .content-container section.line-letter:after {
+    content: "";
+    display: table; }
+  body.type .content-container section.line-letter:after {
+    clear: both; }
+  body.type .content-container section.line-letter article {
+    display: block;
+    float: left;
+    margin-right: 3.97141%;
+    width: 30.65107%; }
+    body.type .content-container section.line-letter article:last-child {
+      margin-right: 0; }
+body.type .content-container section.type img {
+  display: block;
+  float: left;
+  margin-right: 3.97141%;
+  width: 48.0143%;
+  border: 1px solid #eee;
+  padding: 0.809em 0; }
+  body.type .content-container section.type img:last-child {
     margin-right: 0; }
-  body.type .content-container section.anatomy hgroup {
-    display: block;
-    float: left;
-    margin-right: 3.28774%;
-    width: 48.35613%; }
-    body.type .content-container section.anatomy hgroup:last-child {
-      margin-right: 0; }
-  body.type .content-container section.anatomy img {
-    display: block;
-    float: left;
-    margin-right: 3.28774%;
-    width: 48.35613%;
-    max-width: 100%; }
-    body.type .content-container section.anatomy img:last-child {
-      margin-right: 0; }
-  body.type .content-container section.anatomy section.anatomy.wide {
-    width: 100%; }
-    body.type .content-container section.anatomy section.anatomy.wide img {
-      display: block;
-      float: left;
-      margin-right: 3.28774%;
-      width: 100%; }
-      body.type .content-container section.anatomy section.anatomy.wide img:last-child {
-        margin-right: 0; }
-  body.type .content-container section.anatomy ul {
-    display: block;
-    float: left;
-    margin-right: 3.28774%;
-    width: 48.35613%; }
-    body.type .content-container section.anatomy ul:last-child {
-      margin-right: 0; }
-  body.type .content-container section.anatomy h3 {
-    margin-bottom: 0; }
-  body.type .content-container section.anatomy p {
-    margin-top: 6px; }
 body.type .content-container ul.column-types li {
   display: block;
   float: left;
@@ -679,27 +692,35 @@ body.type .content-container ul.column-types li {
 body.type .content-container section.anatomy.wide img {
   width: 100%; }
 
-body.color .content-container section {
-  display: block;
-  float: left;
-  margin-right: 3.28774%;
-  width: 100%;
+body.color .content-container > section {
   border-bottom: 3px solid #eee;
   padding-bottom: 1.618em;
-  margin-bottom: 1.618em; }
-  body.color .content-container section:last-child {
-    margin-right: 0; }
-  body.color .content-container section img {
+  margin-bottom: 1.618em;
+  zoom: 1;
+  display: table;
+  width: 100%; }
+  body.color .content-container > section:before, body.color .content-container > section:after {
+    content: "";
+    display: table; }
+  body.color .content-container > section:after {
+    clear: both; }
+  body.color .content-container > section img {
     max-width: 100%; }
-  body.color .content-container section p {
+  body.color .content-container > section p {
+    margin: 0; }
+  body.color .content-container > section h2 {
+    margin-bottom: 0; }
+  body.color .content-container > section article, body.color .content-container > section div, body.color .content-container > section section {
+    display: table-cell;
+    padding-right: 3.97141%;
+    width: 51.9857%;
+    vertical-align: middle; }
+    body.color .content-container > section article:last-child, body.color .content-container > section div:last-child, body.color .content-container > section section:last-child {
+      padding-right: 0; }
+  body.color .content-container > section section {
     text-align: center; }
-  body.color .content-container section ul {
-    display: block;
-    float: left;
-    margin-right: 3.28774%;
-    width: 48.35613%; }
-    body.color .content-container section ul:last-child {
-      margin-right: 0; }
+    body.color .content-container > section section h2 {
+      margin-top: 1.618em; }
 
 @media screen and (max-width: 960px) {
   .content-container {

@@ -10,6 +10,7 @@
   @include animation-fill-mode(forwards);
   @include animation-timing-function(ease-out);
 }
+
 @mixin show-title {
   0% {
     opacity: 0;

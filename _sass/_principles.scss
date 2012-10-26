@@ -1,32 +1,31 @@
 body.principles {
-	
-	.content-container {
-		
-    li {
-      @include span-columns(6);
-			vertical-align: baseline;
-			display: block;
-			@include nth-omega(2n);
-      
-      section {
-				font-size: em(20, 18);
-				h3 {
-					margin: 0;
-          text-align: center;
-				}
-        
-        img {
-         border: 1px solid #eee;
-         max-width: 80%;
-         margin: lh() 10% 0 10%;
-         opacity: .75;
-        }
-				
-        p {
-					margin-top: .5em;
-			   }
-			}
 
-	  }
-	}
+  .content-container {
+    ul {
+      @include row();
+    }
+
+    li {
+      @include span-columns(2.5 10);
+      vertical-align: baseline;
+      display: block;
+      margin-bottom: lh(2);
+      @include nth-omega(4n);
+
+      section {
+
+        img {
+          border: 1px solid #eee;
+          max-width: 100%;
+        }
+
+        h2 {
+          margin: lh(.25) 0 0;
+          @include omega;
+          text-align: center;
+          color: #666;
+        }
+      }
+    }
+  }
 }
